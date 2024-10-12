@@ -4,9 +4,10 @@
         <h1>FASHION</h1>
     </div>
     <div class="nav-items">
+      <span routerLink="home">Home</span>
       <span>Women</span>
       <span>Men</span>
-      <span>Kids</span>
+      <span routerLink="kids">Kids</span>
       <span>Sports</span>
       <span>Brands</span>
     </div>
@@ -14,9 +15,14 @@
       <button type="submit"><i class="ri-search-line" aria-hidden="true"></i></button>
     </form>
     <div class="nav-action">
-        <i class="ri-user-line login-btn" id="login-btn"></i>
+        <i class="ri-user-line login-btn" id="login-btn" (click)="showProfileDetails()"></i>
         <i class="ri-shopping-bag-line"></i>
         <i class="ri-moon-line"></i>
     </div>
  </div>
+</div>
+<div class="profile" *ngIf="profileShow">
+  <span> Joy Marchel</span><br>
+  <span>+91 1234567891</span><br>
+  <span>Location: India</span>
 </div>

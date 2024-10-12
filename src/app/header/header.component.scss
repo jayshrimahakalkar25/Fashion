@@ -56,3 +56,19 @@ button{
 button i{
     color: rgba(93,94,95);
 }
+
+
+.profile{
+    width: 250px;
+    height: 252px;
+    background-color: #fbfbfb;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 1px 4px 9px -1px #261c1c;
+}
