@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProductItemStoreService } from '../product-item-store.service';
 
 @Component({
   selector: 'app-header',
@@ -7,6 +8,12 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   profileShow = false;
+  showAllSelectedItem = false;
+  selectedItemsCounter = 0;
+  wishlistShow = false;
+  counterValue = 0;
+
+  constructor(public productService: ProductItemStoreService) {}
 
   showProfileDetails() {
     if (this.profileShow === true) {
@@ -15,15 +22,22 @@ export class HeaderComponent {
       this.profileShow = true;
     }
   }
-  wishlistShow = false;
 
-  showWishlistDetails(){
-    if(this.wishlistShow === true){
+  showWishlistDetails() {
+    if (this.wishlistShow === true) {
       this.wishlistShow = false;
-    }else{
+    } else {
       this.wishlistShow = true;
     }
   }
 
-  counterValue = 0;
+  showAddedItem() {
+    console.log(this.productService.selectedItems);
+    if (this.showAllSelectedItem === true) {
+      this.showAllSelectedItem = false;
+    } else {
+      this.showAllSelectedItem = true;
+    }
+    this.selectedItemsCounter = this.productService.selectedItems.length;
+  }
 }

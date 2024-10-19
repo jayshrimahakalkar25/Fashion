@@ -44,6 +44,9 @@
     border: none;
     cursor: pointer;
 }
+.btn:hover{
+    background-color: rgba(250, 104, 0, 0.705);
+}
 .w-button{
     display: flex;
     justify-content: space-between;

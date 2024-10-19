@@ -16,7 +16,7 @@
     <div class="nav-action">
         <i class="ri-user-line login-btn" (click)="showProfileDetails()"></i>
         <i class="ri-heart-3-line" (click)="showWishlistDetails()"></i>
-        <i class="ri-shopping-bag-line"></i>
+        <i class="ri-shopping-cart-line" (click)="showAddedItem()"></i>
     </div>
  </div>
 </div>
@@ -54,3 +54,11 @@
     <span type="submit" class="w-btn btn">Show My Wishlist</span>
   </div>
  </div>
+<!-- ---------selected ITem------ -->
+<div class="wishlist" *ngIf="showAllSelectedItem">
+  <div class="box">
+    <h3 class="w-title">Selected itemCount</h3>
+    <h3 class="counter">{{selectedItemsCounter}}</h3>
+    <span type="submit" class="w-btn btn">Show My Product</span>
+  </div>
+</div>
