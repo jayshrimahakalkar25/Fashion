@@ -1,5 +1,4 @@
 .header{
-    background-color: rgb(255 255 175 / 47%);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .nav{
@@ -18,8 +17,11 @@
     span, i{
         padding: 0 15px;
         cursor: pointer;
-        font-size: 1.20rem;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size:13px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    i{
+        font-size: 18px;
     }
 
 }
@@ -32,11 +34,12 @@ input{
     width: 100%;
     height: 100%;
     display: block;
-    border-radius: 25px;
-    font-size: 20px;
-    padding: 8px 40px 8px 20px;
-    border: none;
-    box-shadow: 0 5px 8px 3px grey;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 8px 80px 8px 20px;
+    border: 1px solid rgba(128, 128, 128, 0.358);
+    background-color: rgba(255,239,223,255);
+    //box-shadow: 0 5px 8px 3px grey;
 }
 input:focus{
     outline: none;
@@ -59,16 +62,143 @@ button i{
 
 
 .profile{
-    width: 250px;
-    height: 252px;
-    background-color: #fbfbfb;
     position: absolute;
-    right: 10px;
-    top: 50px;
+    top: 70px;
+    right: 5px;
+    width: 30%;
+    height: 76%;
+    z-index: 100;
+    background-color: hsla(241, 90%, 44%, 0.429);
+    backdrop-filter: blur(16px);
+    align-items: center;
+    padding: 1.5rem;
+    text-align: center;
+    transition: top .4s;
+    border-radius: 10px;
+
+    .login-form{
+        background-color: hsl(230, 100%, 97%);
+        padding: 2rem 1.5rem;
+        border: 2px solid  hsl(230, 50%, 90%);    
+        row-gap: 1.25rem;
+    }
+    .login-title{
+        font-size: 25px;
+    }
+    .login-grp{
+         //row-gap: 1.25rem; 
+        margin-bottom: 1.25rem;
+    }
+    .login-label{
+        display: block;
+        text-align: initial;
+        color:hsl(230, 70%, 16%);
+        font-weight: 500;
+        margin-bottom: .25rem;
+        font-size: 18px;
+    }
+    .login-input{
+        width: 100%;
+        background-color: hsl(230, 100%, 97%);
+        border: 2px solid  hsl(230, 50%, 90%);
+        padding: 10px;
+        color:  hsl(230, 16%, 45%);
+    }
+    .login-signup, .login-forgot{
+        display: block;
+        font-size: 16px;
+    }
+    .login-signup{
+        margin-bottom: .5rem;
+    }
+    .login-signup a{
+        font-weight: 500;
+        color:  hsl(230, 62%, 56%);
+    }
+    .login-forgot{
+        color:  hsl(230, 62%, 56%);
+        margin-bottom: 1.25rem;
+    }
+    .login-btn{
+        width: 100%;
+        cursor: pointer;
+        display: inline-block;
+        background-color: hsl(230, 62%, 56%);
+        color: hsl(0, 0%, 100%);
+        font-weight: 600;
+        padding: 1rem 1.5rem;
+        transition: box-shadow .4s;
+
+    }
+    .btn{
+        display: inline-block;
+        background-color:  hsla(337, 81%, 62%, 0.824);
+        color: hsl(0, 0%, 100%);
+        font-weight: 600;
+        padding: 1rem 1.5rem;
+        transition: box-shadow .4s;
+    }
+    .btn:hover{
+        box-shadow: 0 4px 32px hsla(230, 72%, 32%,.4);
+    }
+    input{
+        font-size: 15px;
+        border-radius: 0px;
+        box-shadow: none;
+    }
+}
+.wishlist{
+    position: absolute;
+    top: 70px;
+    right: 5px;
+    width: 20%;
+    height: 45%;
     z-index: 10;
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 1px 4px 9px -1px #261c1c;
+    background-color: hsla(241, 90%, 44%, 0.429);
+    backdrop-filter: blur(16px);
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    transition: top .4s;
+    border-radius: 10px;
+
+    .box{
+        background-color: hsl(230, 100%, 97%);
+        padding: 15px 5px 16px 5px;
+        border: 2px solid  hsl(230, 50%, 90%);    
+        row-gap: 1.25rem;
+        border-radius: 30px;
+        text-align: center;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .w-title{
+        font-size: 25px;
+    }
+    .w-btn{
+        width: 100%;
+        cursor: pointer;
+        display: inline-block;
+        background-color: hsl(230, 62%, 56%);
+        color: hsl(0, 0%, 100%);
+        font-weight: 600;
+        transition: box-shadow .4s;
+        align-items: center;
+    }
+    .btn{
+        display: inline-block;
+        background-color:  hsla(337, 81%, 62%, 0.824);
+        color: hsl(0, 0%, 100%);
+        font-weight: 600;
+        padding: 10px 10px;
+        transition: box-shadow .4s;
+    }
+    .btn:hover{
+        box-shadow: 0 4px 32px hsla(230, 72%, 32%,.4);
+    }
+    .counter{
+        font-size: 40px;
+        padding: 10px 0px;
+    }
 }

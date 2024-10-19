@@ -1,4 +1,10 @@
-.kids-wrapper{
+.men-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px 40px;
+}
+.m-w-wrapper{
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
@@ -15,10 +21,4 @@
         letter-spacing: 2px;
         margin-bottom: 20px;
     }
-}
-.k-wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 10px 40px;
 }

@@ -4,25 +4,53 @@
         <h1>FASHION</h1>
     </div>
     <div class="nav-items">
-      <span routerLink="home">Home</span>
-      <span>Women</span>
-      <span>Men</span>
-      <span routerLink="kids">Kids</span>
-      <span>Sports</span>
-      <span>Brands</span>
+      <span routerLink="women">WOMEN</span>
+      <span routerLink="men">MEN</span>
+      <span routerLink="kids">KIDS</span>
+      <span routerLink="sports">SPORTS</span>
+      <span routerLink="brands">BRANDS</span>
     </div>
     <form><input type="text" placeholder="Search...">
       <button type="submit"><i class="ri-search-line" aria-hidden="true"></i></button>
     </form>
     <div class="nav-action">
-        <i class="ri-user-line login-btn" id="login-btn" (click)="showProfileDetails()"></i>
+        <i class="ri-user-line login-btn" (click)="showProfileDetails()"></i>
+        <i class="ri-heart-3-line" (click)="showWishlistDetails()"></i>
         <i class="ri-shopping-bag-line"></i>
-        <i class="ri-moon-line"></i>
     </div>
  </div>
 </div>
+<!-- ----------Login---------->
 <div class="profile" *ngIf="profileShow">
-  <span> Joy Marchel</span><br>
-  <span>+91 1234567891</span><br>
-  <span>Location: India</span>
+  <form action="" class="login-form">
+    <h3 class="login-title">Log In</h3>
+    <div class="login-grp grid">
+      <div>
+        <label for="login-email" class="login-label">Email</label>
+        <input type="email" class="login-input" placeholder="Write your email" id="login-email">
+      </div>
+
+      <div>
+        <label for="login-pass" class="login-label">password</label>
+        <input type="password" class="login-input" placeholder="Enter your password" id="login-password">
+      </div>
+    </div>
+    <div>
+      <span class="login-signup">
+          You do not have an account? <a href="#">Sign Up</a>
+      </span>
+      <a href="#" class="login-forgot">
+          You forgot your password
+      </a>
+      <span type="submit" class="login-btn btn">Log In</span>
+  </div>
+  </form>
 </div>
+<!-- ---------Wshlisht------ -->
+ <div class="wishlist" *ngIf="wishlistShow">
+  <div class="box">
+    <h3 class="w-title">Wishlist</h3>
+    <h3 class="counter">{{counterValue}}</h3>
+    <span type="submit" class="w-btn btn">Show My Wishlist</span>
+  </div>
+ </div>

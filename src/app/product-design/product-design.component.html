@@ -1,7 +1,17 @@
-<div class="kidsWrapper">
-    <img src="./../../assets/photo-01.png" width="100px">
-    <span>product name: {{productInfo.name}}</span>
-    <span>Product Price: {{productInfo.price}}</span>
-    <span>Rating</span>
-    <button>Buy Now</button>
-</div>
+    <div class="row">
+        <img src="../../assets/{{productInfo.imgName}}.avif" alt=""> <br>
+        <span>{{productInfo.name}}</span> <br>
+        <span>₹{{productInfo.price}}</span>
+        <div class="rating">
+          <span *ngFor="let item of [].constructor (productInfo.rating)">
+            <i class="ri-star-fill"></i>
+          </span>
+          <span *ngFor="let item of [].constructor (5-productInfo.rating)">
+            <i class="ri-star-line"></i>
+          </span>
+        </div>
+        <div class="w-button">
+          <button class="btn">Add to cart</button>
+          <button class="btn-2"><i class="ri-heart-3-line"></i></button>
+        </div>
+      </div>

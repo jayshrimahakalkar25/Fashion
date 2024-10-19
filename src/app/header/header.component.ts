@@ -15,4 +15,15 @@ export class HeaderComponent {
       this.profileShow = true;
     }
   }
+  wishlistShow = false;
+
+  showWishlistDetails(){
+    if(this.wishlistShow === true){
+      this.wishlistShow = false;
+    }else{
+      this.wishlistShow = true;
+    }
+  }
+
+  counterValue = 0;
 }

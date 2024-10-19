@@ -1,7 +1,54 @@
-.kidsWrapper{
+.women-wrapper{
     display: flex;
-    flex-direction: column;
-    width: 250px;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    .small{
+        background-color:rgba(108, 130, 201, 0.568);
+    }
+
+    span{
+        padding: 5px 15px;
+        background-color: rgba(250, 143, 67, 0.705);
+        border-radius: 20px;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+}
+.w-p-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px 40px;
+}
+.row{
+    flex-basis: 22%;
+    padding: 10px;
+    max-width: 230px;
+    margin: 5px 5px 20px 5px;
+    transition: transform 0.4s;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.427);
+
+    span{
+        margin: 20px 0;
+    }
+}
+.row img{
+    width: 100%;
+}
+.btn, .btn-2{
+    padding: 5px 15px;
+    background-color: rgba(250, 143, 67, 0.705);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+.w-button{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.row:hover{
+    transform: translateY(-5px);
 }
