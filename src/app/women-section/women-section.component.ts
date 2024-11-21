@@ -15,7 +15,7 @@ export class WomenSectionComponent {
     },
     {
       name: 'Women Straight High Jeans',
-      price: 1499,
+      price: 999,
       imgName: 'image-06',
       rating: 5,
     },

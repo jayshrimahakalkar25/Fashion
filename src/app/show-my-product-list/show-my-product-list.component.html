@@ -1,0 +1,32 @@
+<p class="para">We always send discount coupons to your email everyday. Please always check your email. <u>Check now!</u></p>
+<div class="shopping-cart">
+  <div class="para-2">
+    <div>
+        <span>PRODUCT</span>
+    </div>
+    <div>
+        <span>PRICE</span>
+        <span>QUANTITY</span>
+        <span>SHIPPING COST</span>
+        <span>TOTAL</span>
+    </div>
+  </div>
+  <div class="underline"></div>
+  <div class="product">
+   <div class="row" *ngFor="let product of selectedItems">
+     <div class="row-1">
+        <img src="../../assets/{{product.imgName}}.avif" alt=""> <br>
+        <span>{{product.name}}</span>
+     </div>
+     <div class="row-2">
+     <div class="col-1">₹{{product.price}}</div>
+     <div class="button col-2">
+         <button class="btn btn-decrement"> - </button>
+         <input type="text" class="btn-input" value="01">
+         <button class="btn btn-increment"> +  </button>
+      </div>
+      <div class="col-3">₹ {{product.shipping}}.00</div>
+      <div class="col-4">₹{{product.price}}</div>
+  </div>
+</div>
+</div>

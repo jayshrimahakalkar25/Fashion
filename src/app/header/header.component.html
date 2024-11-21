@@ -1,7 +1,7 @@
 <div class="header">
   <div class="nav">
     <div class="logo">
-        <h1>FASHION</h1>
+        <a href=""><h1>FASHION</h1></a>
     </div>
     <div class="nav-items">
       <span routerLink="women">WOMEN</span>
@@ -50,15 +50,15 @@
  <div class="wishlist" *ngIf="wishlistShow">
   <div class="box">
     <h3 class="w-title">Wishlist</h3>
-    <h3 class="counter">{{counterValue}}</h3>
-    <span type="submit" class="w-btn btn">Show My Wishlist</span>
+    <h3 class="counter">{{selectedWishlistItemsCounter}}</h3>
+    <span routerLink="showMyWishlistProductList" type="submit" class="w-btn btn">Show My Wishlist</span>
   </div>
  </div>
 <!-- ---------selected ITem------ -->
 <div class="wishlist" *ngIf="showAllSelectedItem">
   <div class="box">
-    <h3 class="w-title">Selected itemCount</h3>
+    <h3 class="w-title">Selected Items</h3>
     <h3 class="counter">{{selectedItemsCounter}}</h3>
-    <span type="submit" class="w-btn btn">Show My Product</span>
+    <span routerLink="showMyProductList" type="submit" class="w-btn btn">Show My Product</span>
   </div>
 </div>

@@ -11,6 +11,8 @@ import { WomenSectionComponent } from './women-section/women-section.component';
 import { MenSectionComponent } from './men-section/men-section.component';
 import { SportsSectionComponent } from './sports-section/sports-section.component';
 import { BrandSectionComponent } from './brand-section/brand-section.component';
+import { ShowMyProductListComponent } from './show-my-product-list/show-my-product-list.component';
+import { ShowMyWishlistProductComponent } from './show-my-wishlist-product/show-my-wishlist-product.component';
 
 
 @NgModule({
@@ -24,6 +26,8 @@ import { BrandSectionComponent } from './brand-section/brand-section.component';
     MenSectionComponent,
     SportsSectionComponent,
     BrandSectionComponent,
+    ShowMyProductListComponent,
+    ShowMyWishlistProductComponent,
    
   ],
   imports: [

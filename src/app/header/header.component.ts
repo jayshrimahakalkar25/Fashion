@@ -10,6 +10,7 @@ export class HeaderComponent {
   profileShow = false;
   showAllSelectedItem = false;
   selectedItemsCounter = 0;
+  selectedWishlistItemsCounter = 0;
   wishlistShow = false;
   counterValue = 0;
 
@@ -29,6 +30,7 @@ export class HeaderComponent {
     } else {
       this.wishlistShow = true;
     }
+    this.selectedWishlistItemsCounter = this.productService.selectedWishlistItems.length;
   }
 
   showAddedItem() {
@@ -40,4 +42,6 @@ export class HeaderComponent {
     }
     this.selectedItemsCounter = this.productService.selectedItems.length;
   }
+
+
 }

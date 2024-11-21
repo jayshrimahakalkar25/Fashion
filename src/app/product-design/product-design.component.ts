@@ -11,7 +11,11 @@ export class ProductDesignComponent {
 
   constructor(public productService: ProductItemStoreService) {}
 
-  addToCart(recivedData: any) {
-    this.productService.addToSelectedItem(recivedData);
+  addToCart(receivedData: any) {
+   this.productService.addToSelectedItem(receivedData);
+  }
+
+  addToWishlist(receivedWishlistData:any){
+  this.productService.addToSelectedWishlistItem(receivedWishlistData);
   }
 }

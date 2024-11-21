@@ -5,9 +5,13 @@ import { Injectable } from '@angular/core';
 })
 export class ProductItemStoreService {
   selectedItems: any = [];
-  constructor() {}
+  selectedWishlistItems: any = [];
 
   addToSelectedItem(product: any) {
     this.selectedItems.push(product);
+  }
+
+  addToSelectedWishlistItem(wishlistProduct:any){
+    this.selectedWishlistItems.push(wishlistProduct);
   }
 }
